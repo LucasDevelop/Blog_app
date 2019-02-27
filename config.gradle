@@ -1,0 +1,66 @@
+//此文件用于三方库的版本管理
+ext {
+    android = [
+            compileSdkVersion: 28,
+            applicationId    : "com.lucas.brush",
+            minSdkVersion    : 18,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    //第三方配置
+    third = [
+            WEIXIN_APPKEY : "wx3f5ef71fd6b91431",
+            ALI_PAY_APPKEY: "2019010862813499",
+    ]
+
+    dependencies = [
+            "junit"                     : 'junit:junit:4.12',
+            "appcompat-v7"              : 'com.android.support:appcompat-v7:28.0.0',
+            "support-v4"                : 'com.android.support:support-v4:28.0.0-alpha3',
+            "recyclerview-v7"           : 'com.android.support:recyclerview-v7:28.0.0-alpha3',
+            "glide"                     : 'com.github.bumptech.glide:glide:4.8.0',
+            "glide:compiler"            : 'com.github.bumptech.glide:compiler:4.8.0',
+            "glide-transformations"     : 'jp.wasabeef:glide-transformations:3.3.0',
+            "retrofit"                  : 'com.squareup.retrofit2:retrofit:2.4.0',
+            "adapter-rxjava"            : 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
+            "converter-gson"            : 'com.squareup.retrofit2:converter-gson:2.4.0',
+            "otto"                      : 'com.squareup:otto:1.3.8',
+            "design"                    : 'com.android.support:design:28.0.0-alpha3',
+            "rxjava"                    : 'io.reactivex.rxjava2:rxjava:2.2.3',
+            "okhttp"                    : 'com.squareup.okhttp3:okhttp:3.8.1',
+            "logging-interceptor"       : 'com.squareup.okhttp3:logging-interceptor:3.8.1',
+            "multidex"                  : 'com.android.support:multidex:1.0.2',
+            "utilcode"                  : 'com.blankj:utilcode:1.22.0',
+            "cardview"                  : 'com.android.support:cardview-v7:28.0.0-alpha3',
+            "rxpermissions"             : 'com.github.tbruyelle:rxpermissions:0.10.2',
+            "rxandroid"                 : 'io.reactivex.rxjava2:rxandroid:2.1.0',
+            //协程依赖
+            "kotlinx-coroutines-core"   : 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.20',
+            "kotlinx-coroutines-android": 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.20',
+            //dagger2
+            // 如果使用支持包， 上面的Android包可以省略，支持包里面已经包含了
+            "dagger-android-support"    : 'com.google.dagger:dagger-android-support:2.19',
+            "dagger-compiler"           : 'com.google.dagger:dagger-compiler:2.19',
+            "dagger"                    : 'com.google.dagger:dagger:2.19',
+            "dagger-android-processor"  : 'com.google.dagger:dagger-android-processor:2.19',
+            // If you want to use Kotlin syntax with Android Lifecycle
+            "rxlifecycle-components"    : 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1',
+            "rxlifecycle"               : 'com.trello.rxlifecycle2:rxlifecycle:2.0.1',
+            //adapter
+            "adapter"                   : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30',
+            //fastJson
+            "fastjson"                  : 'com.alibaba:fastjson:1.1.70.android',
+            //banner
+            "banner"                    : 'com.youth.banner:banner:1.4.10',
+            //地图
+            "map-location"              : 'com.amap.api:location:3.3.0',
+            "map-3dmap"                 : 'com.amap.api:3dmap:5.0.0',
+            "map-search"                : 'com.amap.api:search:5.0.0',
+            //webview
+            "agentweb"                  : 'com.just.agentweb:agentweb:4.0.2',
+            "filechooser"               : 'com.just.agentweb:filechooser:4.0.2',
+            //图片压缩
+            "luban"                     : 'top.zibin:Luban:1.1.8',
+    ]
+}
